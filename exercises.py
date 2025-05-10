@@ -20,7 +20,7 @@ def example_list_function():
       print(element)
 
 # Call the function and print each element
-# example_list_function()
+example_list_function()
 
 
 
@@ -36,8 +36,11 @@ def example_list_function():
 # Assign the last student’s name to a variable named last_student.
 
 def manage_students():
-    # your code here
-    pass
+    students = ['george', 'mary', 'stevie', 'helen']
+    first_student = students[1]
+    last_student = students[-1]
+    return(first_student, last_student)
+    
 # Call the function and print the result
 print('Exercise 1:', manage_students())
 
@@ -55,8 +58,11 @@ print('Exercise 1:', manage_students())
 # Use a for loop to iterate over the strings in foods and append each string to meal.
 
 def combine_foods():
-    # your code here
-    pass
+    foods = ('potatoes', 'rice', 'tea', 'gummy worms')
+    meal = ''
+    for food in foods:
+        meal += food + ', '
+    return(meal)
 # Call the function and print the result
 print('Exercise 2:', combine_foods())
 
