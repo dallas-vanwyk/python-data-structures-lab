@@ -148,8 +148,9 @@ print('Exercise 5:', list_home_town_items())
 # For example: ["Tina is awesome!", "Fred is awesome!", "Wilma is awesome!"]
 
 def create_awesome_students():
-   pass
-    # your code here
+   awesome_students = [f"{student} is awesome" for student in students]
+   return awesome_students
+
 
 # Call the function and print the result
 print('Exercise 6:', create_awesome_students())
@@ -169,8 +170,8 @@ print('Exercise 6:', create_awesome_students())
 # For example, if foods is a tuple of ('Taco', 'Burrito', 'Sandwich'), foods_with_an_a would be a list equal to ['Taco', 'Sandwich']
 
 def filter_foods_with_a():
-   pass
-    # your code here
+    foods_with_an_a = [food for food in foods if 'a' in food]
+    return foods_with_an_a
 
 # Call the function and print the result
 print('Exercise 7:', filter_foods_with_a())
